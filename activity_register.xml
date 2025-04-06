@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backgrounnew"
+    tools:context=".RegisterActivity">
+
+    <ImageView
+        android:id="@+id/idbck"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginStart="15dp"
+        android:src="@drawable/back_24"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/idakun"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="60dp"
+        android:src="@drawable/ikonakun"
+        app:layout_constraintTop_toBottomOf="@id/idbck"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/idtxt1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Buat Akun mu Sekarang"
+        android:textSize="18sp"
+        android:textColor="@color/black"
+        app:layout_constraintTop_toBottomOf="@id/idakun"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/idly1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="30dp"
+        app:layout_constraintTop_toBottomOf="@id/idtxt1">
+        <EditText
+            android:id="@+id/idname"
+            android:layout_width="match_parent"
+            android:layout_height="57dp"
+            android:hint="Masukan Nama"
+            android:textColorHint="@color/white"
+            android:paddingLeft="10dp"
+            android:background="@drawable/button_shape" />
+
+        <EditText
+            android:id="@+id/idmail"
+            android:layout_width="match_parent"
+            android:layout_height="57dp"
+            android:hint="Masukan Email"
+            android:textColorHint="@color/white"
+            android:paddingLeft="10dp"
+            android:background="@drawable/button_shape"
+            android:layout_marginTop="10dp" />
+
+        <EditText
+            android:id="@+id/idpass"
+            android:layout_width="match_parent"
+            android:layout_height="57dp"
+            android:hint="Masukan Kata Sandi"
+            android:textColorHint="@color/white"
+            android:paddingLeft="10dp"
+            android:background="@drawable/button_shape"
+            android:layout_marginTop="10dp" />
+
+        <EditText
+            android:id="@+id/idconfm"
+            android:layout_width="match_parent"
+            android:layout_height="57dp"
+            android:hint="Masukan Ulang Kata Sandi"
+            android:textColorHint="@color/white"
+            android:paddingLeft="10dp"
+            android:background="@drawable/button_shape"
+            android:layout_marginTop="10dp" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Daftar"
+        android:width="300dp"
+        app:layout_constraintTop_toBottomOf="@id/idly1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp"
+        app:layout_constraintTop_toBottomOf="@id/btn_2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sudahkah punya akun? "
+            android:textSize="12sp" />
+        <TextView
+            android:id="@+id/idlgn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Login"
+            android:textSize="12sp"
+            android:textColor="@color/material_dynamic_primary40" />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+
